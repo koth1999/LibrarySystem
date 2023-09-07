@@ -6,14 +6,16 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+
 @Entity
-@Table(name = "t_user")
+@Table(name = "t_book")
 @Getter @Setter
 @NoArgsConstructor
-public class User {
+public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String username;
-    private String password;
+    private String title;
+    private String author;
+
 }
