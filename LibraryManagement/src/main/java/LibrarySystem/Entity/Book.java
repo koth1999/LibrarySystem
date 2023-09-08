@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 
 @Entity
@@ -17,5 +18,7 @@ public class Book {
     private Long id;
     private String title;
     private String author;
+    private boolean isAvailable = true;
+    private LocalDateTime loanDate;
 
 }
